@@ -4,39 +4,42 @@
 @import 'tailwindcss/utilities';
 
 body {
-    @apply text-center py-8 font-sans;
+    text-align: center;
+    padding-top: 8rem;
+    font-family: sans-serif;
 }
 
 button {
-    @apply px-4 py-2 text-white font-semibold rounded;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.25rem;
 }
 
 #colorBtnRed {
-    @apply bg-red-500;
+    background-color: #ef4444; /* Código de color de red-500 en Tailwind */
 }
 
 #colorBtnBlue {
-    @apply bg-blue-500;
+    background-color: #3b82f6; /* Código de color de blue-500 en Tailwind */
 }
 
 #colorBtnGreen {
-    @apply bg-green-500;
+    background-color: #10b981; /* Código de color de green-500 en Tailwind */
 }
-/* src/styles.css */
-/* ... Otros estilos ... */
 
 #colorBtnYellow {
-    @apply bg-yellow-500;
+    background-color: #f59e0b; /* Código de color de yellow-500 en Tailwind */
 }
 
 #colorBtnPurple {
-    @apply bg-purple-500;
+    background-color: #8b5cf6; /* Código de color de purple-500 en Tailwind */
 }
 
 #colorBtnTeal {
-    @apply bg-teal-500;
+    background-color: #14b8a6; /* Código de color de teal-500 en Tailwind */
 }
 
 #colorBtnPink {
-    @apply bg-pink-500;
+    background-color: #ec4899; /* Código de color de pink-500 en Tailwind */
 }

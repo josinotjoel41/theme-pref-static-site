@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "eleventy"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
+    "netlify-cli": "^16.5.1",
     "postcss-cli": "^10.1.0",
     "tailwindcss": "^3.3.3"
   }
