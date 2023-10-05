@@ -15,12 +15,22 @@
     <button id="colorBtnPurple" onclick="changeColor('purple')" class="mr-2">Morado</button>
     <button id="colorBtnTeal" onclick="changeColor('teal')" class="mr-2">Turquesa</button>
     <button id="colorBtnPink" onclick="changeColor('pink')">Rosa</button>
+    <!-- New button for resetting to default -->
+    <button id="resetBtn" onclick="resetToDefault()">Reset to Default</button>
 
     <script>
         // Obtener el último color almacenado en localStorage
         const lastColor = localStorage.getItem('lastColor');
         if (lastColor) {
             document.body.style.backgroundColor = lastColor;
+        }
+
+        function resetToDefault() {
+            // Clear the stored color in localStorage
+            localStorage.removeItem('lastColor');
+            
+            // Optionally, set a default color if needed
+            // document.body.style.backgroundColor = 'default-color';
         }
 
         function changeColor(color) {
