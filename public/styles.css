@@ -1,0 +1,42 @@
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    @apply text-center py-8 font-sans;
+}
+
+button {
+    @apply px-4 py-2 text-white font-semibold rounded;
+}
+
+#colorBtnRed {
+    @apply bg-red-500;
+}
+
+#colorBtnBlue {
+    @apply bg-blue-500;
+}
+
+#colorBtnGreen {
+    @apply bg-green-500;
+}
+/* src/styles.css */
+/* ... Otros estilos ... */
+
+#colorBtnYellow {
+    @apply bg-yellow-500;
+}
+
+#colorBtnPurple {
+    @apply bg-purple-500;
+}
+
+#colorBtnTeal {
+    @apply bg-teal-500;
+}
+
+#colorBtnPink {
+    @apply bg-pink-500;
+}

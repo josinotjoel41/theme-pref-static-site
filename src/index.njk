@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige su color de fondo</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1 class="text-3xl mb-8">Elige su color de fondo</h1>
+    <button id="colorBtnRed" onclick="changeColor('red')" class="mr-2">Rojo</button>
+    <button id="colorBtnBlue" onclick="changeColor('blue')" class="mr-2">Azul</button>
+    <button id="colorBtnGreen" onclick="changeColor('green')" class="mr-2">Verde</button>
+    <button id="colorBtnYellow" onclick="changeColor('yellow')" class="mr-2">Amarillo</button>
+    <button id="colorBtnPurple" onclick="changeColor('purple')" class="mr-2">Morado</button>
+    <button id="colorBtnTeal" onclick="changeColor('teal')" class="mr-2">Turquesa</button>
+    <button id="colorBtnPink" onclick="changeColor('pink')">Rosa</button>
+
+    <script>
+        // Obtener el último color almacenado en localStorage
+        const lastColor = localStorage.getItem('lastColor');
+        if (lastColor) {
+            document.body.style.backgroundColor = lastColor;
+        }
+
+        function changeColor(color) {
+            // Cambiar el color de fondo
+            document.body.style.backgroundColor = color;
+
+            // Guardar el último color en localStorage
+            localStorage.setItem('lastColor', color);
+        }
+    </script>
+</body>
+</html>
